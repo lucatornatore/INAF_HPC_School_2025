@@ -1,0 +1,4 @@
+gcc -march=native -I/scratch/Software/include -DUSE_PAPI -o crosssort crosssort.c -lm -L/scratch/Software/lib -lpapi
+gcc -march=native -DBESMART -I/scratch/Software/include -DUSE_PAPI -o crosssort_smart crosssort.c -lm -L/scratch/Software/lib -lpapi
+gcc -march=native -DBESMART2 -I/scratch/Software/include -DUSE_PAPI -o crosssort_smart2 crosssort.c -lm -L/scratch/Software/lib -lpapi
+gcc -march=native -DBESMART3 -I/scratch/Software/include -DUSE_PAPI -o crosssort_smart3 crosssort.c -lm -L/scratch/Software/lib -lpapi
