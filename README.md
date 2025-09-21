@@ -1,6 +1,20 @@
 # INAF HPC School 2025 : Basic HPC
 **Welcome at the INAF - Istituto Nazionale di Astrofisica (National Institute for Astrophysics, Italy) introductory course on HPC held at Catania, from Sep. 22nd to Sep. 26th.**
 
+**LOC:**
+
+Alessandro Costa, Fabio Vitello, Salvo Scavo ( **OACT** )
+
+**TEACHERS and INSTRUCTORS**:
+
+Luca Tornatore, David Goz, Giovanni Lacopo, Antonio Ragagnin, Giuliano Taffoni ( **OATS** )
+
+**Support**:
+
+INAF USC-VIII
+
+
+
 This module focuses on a basic introduction to the following topics
 
 1. #### Basic elements of modern computer architecture
