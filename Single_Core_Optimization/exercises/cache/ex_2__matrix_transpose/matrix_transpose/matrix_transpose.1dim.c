@@ -84,7 +84,7 @@ void transpose_contiguous_write( double *matrix, double *tmatrix, int N )
 int main(int argc, char **argv)
 {
   
-  int     N             = (argc > 1 ? atoi(*(argv+1) : 10000 );
+  int     N             = (argc > 1 ? atoi(*(argv+1)) : 10000 );
   int     mode          = (argc > 2 ? atoi(*(argv+2)) : STRIDED_WRITE );
   double *array, *array_swap;
 
