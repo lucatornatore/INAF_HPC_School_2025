@@ -3,11 +3,11 @@
 
 **LOC:**
 
-Alessandro Costa, Fabio Vitello, Salvo Scavo ( **OACT** )
+Alessandro Costa, Fabio Vitello, Salvo Scavo, Giuliano Taffoni 
 
 **TEACHERS and INSTRUCTORS**:
 
-Luca Tornatore, David Goz, Giovanni Lacopo, Antonio Ragagnin, Giuliano Taffoni ( **OATS** )
+Luca Tornatore, David Goz, Giovanni Lacopo, Antonio Ragagnin, Giuliano Taffoni, Claudio Gheller 
 
 **Support**:
 
