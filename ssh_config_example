@@ -1,0 +1,17 @@
+
+# put this entry in your $(HOME)/.ssh/config file
+
+Host $MNEMONIC_NAME
+     Hostname pleiadi.oact.inaf.it
+     User hpcschool$NN
+     IdentityFile $YOUR_PATH_TO_YOUR_PRIVATE_KEY
+     ServerAliveCountMax 20
+     ServerAliveInterval 15
+
+# $MNEMONIC_NAME can be whatever you want
+#                mine, for instance, is pleiadict
+#
+# $NN is your account number
+# $YOUR_PATH_TO_YOUR_PRIVATE_KEY is tipically ~/.ssh/$your_private_key
+#                                mine is different because I have more than 5 keys
+#
