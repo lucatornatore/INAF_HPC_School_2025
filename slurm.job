@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH --job-name=test_run     # Job name
+#SBATCH --account=hpc_school    # Slurm account
+#SBATCH --partition=hpc_school  # Partition: {gpu, v100}
+#SBATCH --nodes=1               # Number of nodes
+#SBATCH --ntasks=1              # Number of tasks (one for each GPU desired for use case):
+#SBATCH --cpus-per-task=32      # Processors per task
+
+
+module load gcc-11.2.0
+
+gcc -fopenmp -o hello hello.c
+export OMP_NUM_THREADS=4
+./hello
