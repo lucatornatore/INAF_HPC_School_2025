@@ -77,5 +77,7 @@ if( retval == PAPI_OK ) {						\
 #define PAPI_INIT
 #define PAPI_START_CNTR
 #define PAPI_STOP_CNTR
+#define PAPI_FLUSH
+#define PAPI_FLUSH_BUFFER
 
 #endif                                                          // -----------------------------------------------------------
