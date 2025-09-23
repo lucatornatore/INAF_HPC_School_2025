@@ -76,6 +76,7 @@ int main( int argc, char **argv )
 	    }
  	                                     // if even that fails, just use the default value 1
 
+	}
     }
 
   if ( omp_get_dynamic( ) == 0 )
@@ -109,7 +110,7 @@ int main( int argc, char **argv )
                                    // number at the creation of the
                                    // parallel region:
   
-  // #pragma omp parallel num_threads( threads_num )
+  //#pragma omp parallel num_threads( threads_num )
   
   {   
     
