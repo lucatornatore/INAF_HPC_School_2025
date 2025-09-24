@@ -33,30 +33,37 @@ inline DTYPE scan_efficient( const uint N, DTYPE * restrict array )
 {
 
   uint N_4 = (N/4)*4;
+  DTYPE carry = (DTYPE)0;
 
-  {
-    DTYPE temp = array[2];
-    array[1]   += array[0];
-    array[3]   += temp;
-    array[2]   += array[1];
-    array[3]   += array[1];
-  }
   
   PRAGMA_VECT_LOOP
-  for ( uint ii = 4; ii < N_4; ii+=4 )
+  for ( uint ii = 0; ii < N_4; ii+=4 )
     {
-      DTYPE register temp = array[ii+2];
-      array[ii]     += array[ii-1];      
-      array[ii+1]   += array[ii];
-      array[ii+3]   += temp;
-      array[ii+2]   += array[ii+1];
-      array[ii+3]   += array[ii+1];      
+      DTYPE register a0 = array[ii];
+      DTYPE register a1 = array[ii+1];
+      DTYPE register a2 = array[ii+2];
+      DTYPE register a3 = array[ii+3];
+      
+      DTYPE t1 = a0 + a1;
+      DTYPE t2 = a1 + a2;
+      DTYPE t3 = a2 + a3;
+
+      DTYPE u2 = a0 + t2;
+      DTYPE u3 = t1 + t3;
+      
+      array[ii] = a0 + carry;
+      array[ii+1] = t1 + carry;
+      array[ii+2] = u2 + carry;
+      array[ii+3] = u3 + carry;
+
+      carry += u3;
     }
+
+  for ( uint ii = N_4; ii < N; ii++ ) {
+    carry += array[ii-1];
+    array[ii] = carry; }
   
-  for ( uint ii = N_4; ii < N; ii++ )
-    array[ii] += array[ii-1];
-  
-  return array[N-1];
+  return carry;
 }
 
 
