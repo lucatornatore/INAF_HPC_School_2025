@@ -102,7 +102,7 @@ int main ( int argc, char **argv )
   timing_start = CPU_TIME;
 
   for ( uint ii = 0; ii < N; ii++ )
-    array[ii] = (double)ii;
+    array[ii] = (DTYPE)ii;
   
   timing_prepare = CPU_TIME - timing_start;
 
