@@ -7,7 +7,7 @@ Alessandro Costa, Fabio Vitello, Salvo Scavo, Giuliano Taffoni
 
 **TEACHERS and INSTRUCTORS**:
 
-Luca Tornatore, David Goz, Giovanni Lacopo, Antonio Ragagnin, Giuliano Taffoni, Claudio Gheller 
+Luca Tornatore, David Goz, Giovanni Lacopo, Antonio Ragagnin, Giuliano Taffoni, Alessandro Costa, Claudio Gheller 
 
 **Support**:
 
